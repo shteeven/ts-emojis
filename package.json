@@ -1,0 +1,40 @@
+{
+  "name": "ts-emojis",
+  "version": "1.0.0",
+  "description": "A set of unicode emojis as consts",
+  "main": "index.js",
+  "files": ["lib/**/*"],
+  "dependencies": {},
+  "devDependencies": {
+    "prettier": "^2.2.1",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^4.2.3"
+  },
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "postversion" : "git push && git push --tags",
+    "prepare" : "npm run build",
+    "prepublishOnly" : "npm run lint",
+    "preversion" : "npm run lint",
+    "test": "test",
+    "version" : "npm run format && git add -A src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shteeven/ts-emojis.git"
+  },
+  "keywords": [
+    "emojis",
+    "unicode",
+    "typescript"
+  ],
+  "author": "Steven Barnhurst",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shteeven/ts-emojis/issues"
+  },
+  "homepage": "https://github.com/shteeven/ts-emojis#readme"
+}
