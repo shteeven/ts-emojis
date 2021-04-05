@@ -1,8 +1,9 @@
 {
   "name": "ts-emojis",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A set of unicode emojis as consts",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "files": ["lib/**/*"],
   "dependencies": {},
   "devDependencies": {
